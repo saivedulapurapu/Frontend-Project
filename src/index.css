@@ -1,0 +1,274 @@
+body h1 {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Header animations */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover {
+  color: #f8f9fa !important; /* brighter white */
+}
+
+.nav-link {
+  position: relative;
+  transition: color .3s, transform .3s;
+  font-weight: bold;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width .3s;
+}
+.nav-link:hover {
+  color: #FFD700 !important;
+  transform: translateY(-2px);
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Searchbar suggestion dropdown */
+.suggestions {
+  position: absolute;
+  top: 105%;
+  right: 0;
+  background: #fff;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 9999;
+  display: none;
+}
+.suggestions.show {
+  display: block;
+}
+.suggestions li:hover {
+  background-color: #f5f5f5;
+}
+
+/* Header scroll effect (JS toggles `.scrolled`) */
+header.scrolled {
+  background: #b70000 !important;
+  transition: background .3s;
+}
+/* Sidebar Base */
+.custom-sidebar {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #e5e5e5;
+}
+
+/* Sidebar Items */
+.custom-sidebar .nav-link {
+  padding: 12px 18px;
+  font-size: 1rem;
+  color: var(--bs-body-color);
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+/* Hover Effect (light like your CSS) */
+.custom-sidebar .nav-link:hover {
+  background-color: var(--bs-tertiary-bg);
+  color: var(--bs-link-hover-color);
+}
+
+/* Active Link (Bootstrap red style) */
+.custom-sidebar .nav-link.active {
+  background-color: var(--bs-red);
+  color: #fff !important;
+}
+
+/* Divider line styling */
+.custom-sidebar hr {
+  opacity: 0.15;
+}
+
+.hero-text-animated {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.3s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recipe-card {
+  height: 400px; /* Full card fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recipe-card img {
+  height: 250px !important; /* Fixed image height */
+  object-fit: cover;
+}
+
+.recipe-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+.recipe-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.recipe-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.footer-social { display: flex; gap: 20px; }
+.footer-social a { color: white; font-size: 20px; transition: color 0.3s; }
+.footer-social a:hover { color: #FFD700; }
+
+.recipe-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: #ffffff;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Title */
+.recipe-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-top: 10px;
+}
+
+/* BUTTONS */
+.recipe-btn {
+  width: 85%;
+  margin: 8px auto;
+  padding: 10px;
+  border-radius: 30px !important;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+/* Recipe card button (icon + text) */
+/* FIXED CARD SIZE */
+.recipe-card {
+  width: 100%;
+  max-width: 300px;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: white;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+/* FIXED IMAGE SIZE */
+.recipe-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* TITLE */
+.recipe-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: black;
+  
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* BUTTON ROW */
+.recipe-btn-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-top: 10px;
+}
+
+/* SMALL CLEAN BUTTONS */
+.action-btn {
+  flex: 1;
+  margin: 0 4px;
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* VIEW */
+.btn-view {
+  background: #222;
+  color: white;
+}
+.btn-view:hover {
+  background: black;
+}
+
+/* EDIT */
+.btn-edit {
+  background: #ffe08a;
+  color: #5a4500;
+}
+.btn-edit:hover {
+  background: #ffd45c;
+}
+
+/* DELETE */
+.btn-delete {
+  background: #ff8a80;
+  color: #5f0000;
+}
+.btn-delete:hover {
+  background: #ff5f52;
+}
+
+/* ICON SIZE */
+.action-btn i {
+  font-size: 1rem;
+}

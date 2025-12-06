@@ -1,0 +1,58 @@
+/* Wrapper Card */
+.add-recipe-wrapper {
+  max-width: 780px;
+  margin: 120px auto;
+}
+
+/* Title */
+.add-recipe-title {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #d62828; /* your theme red */
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+  border-radius: 50rem; /* pill style */
+  padding: 10px 16px;
+  border: 2px solid #ddd;
+  transition: 0.25s;
+}
+
+textarea.form-control {
+  border-radius: 15px !important;
+}
+
+/* Focus effect */
+.form-control:focus,
+.form-select:focus {
+  border-color: #d62828 !important;
+  box-shadow: 0 0 6px rgba(214, 40, 40, 0.3);
+}
+
+/* Buttons */
+.btn-add {
+  background: #2d6a4f;
+  padding: 12px 35px;
+  border-radius: 50rem;
+  font-weight: bold;
+  color: white;
+}
+.btn-add:hover {
+  background: #1b4d36;
+}
+
+.btn-cancel {
+  border-radius: 50rem;
+  padding: 12px 35px;
+}
+
+/* Error box */
+.error-box {
+  background: #ffe5e5;
+  border-left: 5px solid #d62828;
+  color: #8a1b1b;
+  padding: 10px 14px;
+  border-radius: 8px;
+}

@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123"
+    },
+    {
+      "id": "4de9",
+      "name": "sai pavan kumar",
+      "email": "saivedulapurapu@gmail.com",
+      "password": "$aiRushi123"
+    },
+    {
+      "id": "db9a",
+      "name": "sushma",
+      "email": "sushma15@gmail.com",
+      "password": "sushma"
+    }
+  ]
+}

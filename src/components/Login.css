@@ -1,0 +1,74 @@
+/* Background Gradient */
+.login-bg {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass Card */
+.glass-card {
+  width: 420px;
+  border-radius: 22px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+.login-title {
+  color: white;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-input {
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  padding-left: 15px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  height: 48px;
+  background: #000;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+.register-btn {
+  width: 100%;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border-radius: 12px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
